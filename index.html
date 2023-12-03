@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta />
+    <meta name="description" content="Screen Builder" />
+    <link rel="icon" href="./plan-icon.png" type="image/icon type" />
+    <title>Screen Builder</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <form id="form">
+          <div class="form-inputs">
+            <!-- inputs -->
+            <h1>Screen Builder</h1>
+            <div class="form-control">
+              <div>Element type</div>
+              <label for="select-element"></label>
+              <select class="select" id="select-element">
+                <option id="op1">div</option>
+                <option id="op2">p</option>
+                <option id="op3">span</option>
+                <option id="op4">h1</option>
+                <option id="op5">h2</option>
+                <option id="op6">h3</option>
+                <option id="op6">select</option>
+                <option id="op6">option</option>
+              </select>
+            </div>
+
+            <div class="form-control">
+              <div>Element Width*</div>
+              <div class="width-inputs-inner">
+                <label for="width-input"></label>
+                <input
+                  type="number"
+                  id="width-input"
+                  name="width-input"
+                  min="1"
+                  required
+                />
+                <label for="select-width"></label>
+                <select class="select" id="select-width">
+                  <option id="op1">px</option>
+                  <option id="op2">%</option>
+                  <option id="op3">em</option>
+                  <option id="op4">rem</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-control">
+              <div>Element Height*</div>
+              <div class="width-inputs-inner">
+                <label for="height-input"></label>
+                <input
+                  type="number"
+                  id="height-input"
+                  name="height-input"
+                  min="1"
+                  required
+                />
+                <label for="select-height"></label>
+                <select class="select" id="select-height">
+                  <option id="op1">px</option>
+                  <option id="op2">%</option>
+                  <option id="op3">em</option>
+                  <option id="op4">rem</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-control">
+              <div>Background Color</div>
+              <label for="background-color-input"></label>
+              <input
+                type="color"
+                id="background-color-input"
+                name="background-color-input"
+                value="#ffffff"
+              />
+            </div>
+
+            <div class="form-control">
+              <div>Text*</div>
+              <label for="text-input"></label>
+              <input type="text" id="text-input" name="text-input" required />
+            </div>
+
+            <div class="form-control">
+              <div class="width-inputs-inner">
+                <div>
+                  <div>Color</div>
+                  <label for="font-color-input"></label>
+                  <input
+                    type="color"
+                    id="font-color-input"
+                    name="font-color-input"
+                    value="#000000"
+                  />
+                </div>
+                <div>
+                  <div>Font</div>
+                  <label for="select-font"></label>
+                  <select class="select" id="select-font">
+                    <option id="op1">Arial</option>
+                    <option id="op2">Times</option>
+                    <option id="op3">Cursive</option>
+                  </select>
+                </div>
+                <div>
+                  <div>Weight</div>
+                  <label for="select-weight"></label>
+                  <select class="select" id="select-weight">
+                    <option id="op1">Normal</option>
+                    <option id="op2">Bold</option>
+                    <option id="op3">Bolder</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-control">
+              <div>Size*</div>
+              <div class="width-inputs-inner">
+                <label for="font-size-input"></label>
+                <input
+                  type="number"
+                  id="font-size-input"
+                  name="font-size-input"
+                  min="1"
+                  required
+                />
+
+                <label for="font-size-select"></label>
+                <select class="select" id="font-size-select">
+                  <option id="op1">px</option>
+                  <option id="op2">em</option>
+                  <option id="op3">rem</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-control">
+              <div>Border</div>
+              <div class="width-inputs-inner">
+                <label for="border-input"></label>
+                <input
+                  type="number"
+                  id="border-input"
+                  name="border-input"
+                  min="0"
+                  value="0"
+                />
+
+                <label for="select-border-type"></label>
+                <select class="select" id="select-border-type">
+                  <option id="op1">none</option>
+                  <option id="op2">solid</option>
+                  <option id="op3">dotted</option>
+                  <option id="op4">dashed</option>
+                </select>
+
+                <label for="border-color"></label>
+                <input
+                  type="color"
+                  id="border-color"
+                  name="border-color"
+                  value="#000000"
+                />
+              </div>
+            </div>
+
+            <div class="form-control">
+              <div>Border Radius</div>
+              <div class="width-inputs-inner">
+                <label for="border-radius-input"></label>
+                <input
+                  type="number"
+                  id="border-radius-input"
+                  name="border-radius-input"
+                  min="0"
+                  value="0"
+                />
+              </div>
+            </div>
+
+            <div class="form-control">
+              <div>Margin</div>
+              <div class="width-inputs-inner">
+                <label for="margin-input"></label>
+                <input
+                  type="number"
+                  id="margin-input"
+                  name="margin-input"
+                  min="0"
+                  value="0"
+                />
+                <label for="margin-select"></label>
+                <select class="select" id="margin-select">
+                  <option id="op1">all sides</option>
+                  <option id="op2">buttom</option>
+                  <option id="op3">top</option>
+                  <option id="op4">left & right</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-control">
+              <div>Padding</div>
+              <div class="width-inputs-inner">
+                <label for="padding-input"></label>
+                <input
+                  type="number"
+                  id="padding-input"
+                  name="padding-input"
+                  min="0"
+                  value="0"
+                />
+                <label for="padding-select"></label>
+                <select class="select" id="padding-select">
+                  <option id="op1">all sides</option>
+                  <option id="op2">buttom</option>
+                  <option id="op3">top</option>
+                  <option id="op4">left & right</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-control">
+              <div>Box Shadow</div>
+              <div class="width-inputs-inner">
+                <label for="box-shadow-x-input"></label>
+                <input
+                  type="number"
+                  id="box-shadow-x-input"
+                  name="box-shadow-x-input"
+                  value="0"
+                />
+                <label for="box-shadow-y-input"></label>
+                <input
+                  type="number"
+                  id="box-shadow-y-input"
+                  name="box-shadow-y-input"
+                  value="0"
+                />
+
+                <label for="box-shadow-color-input"></label>
+                <input
+                  type="color"
+                  id="box-shadow-color-input"
+                  name="box-shadow-color-input"
+                  value="#ffffff"
+                />
+
+                <label for="create-box-shadow"></label>
+                <select class="select" id="create-box-shadow">
+                  <option id="op1">No</option>
+                  <option id="op2">Yes</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-control">
+              <div>ID</div>
+              <div class="width-inputs-inner">
+                <label for="id-input"></label>
+                <input
+                  type="text"
+                  id="id-input"
+                  name="id-input"
+                  maxlength="15"
+                />
+              </div>
+            </div>
+
+            <!-- create element button -->
+            <div class="form-control">
+              <div id="msg"></div>
+              <button type="submit" id="submit">Send</button>
+            </div>
+          </div>
+        </form>
+        <!-- other buttons -->
+        <div class="buttons">
+          <button id="save" disabled>Save</button>
+          <button id="auto-save" class="red">Auto Save-Off</button>
+          <button id="load" disabled>Load</button>
+          <button id="clear">Clear</button>
+          <button id="swap-container">Swap Container</button>
+        </div>
+      </div>
+      <!-- injected elements -->
+      <div id="content-container-background">
+        <div id="content-container"></div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

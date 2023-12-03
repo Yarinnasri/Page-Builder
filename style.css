@@ -1,0 +1,161 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: azure;
+}
+
+.container {
+  display: flex;
+  width: 100vw;
+}
+
+.form-container {
+  background: linear-gradient(to right, #000000, #8d8f8f);
+  flex: 1;
+  min-width: 250px;
+  color: azure;
+}
+
+#content-container-background {
+  flex: 5;
+  background-color: rgb(245, 245, 245);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#content-container {
+  background-color: white;
+  width: 90%;
+  height: 90%;
+  box-shadow: rgb(213, 213, 213) 0px 0px 10px 0px;
+  overflow: hidden;
+}
+
+#content-container * {
+  overflow: hidden;
+}
+
+h1 {
+  margin: auto;
+  font-size: 2rem;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin: 8px;
+}
+
+.width-inputs-inner {
+  display: flex;
+}
+
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+form input[type="number"] {
+  width: 55px;
+}
+form input[type="text"] {
+  width: 200px;
+}
+form input[type="color"] {
+  width: 45px;
+}
+
+form input,
+select,
+button {
+  height: 30px;
+}
+
+form input,
+select {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+option {
+  color: black;
+}
+
+#msg {
+  margin: 5px 0px;
+  font-size: 12px;
+  color: red;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  justify-content: center;
+}
+
+button {
+  background-color: #1f1f1f;
+  font-weight: 600;
+  min-width: 100px;
+  border: 1px solid black;
+}
+
+button:disabled {
+  opacity: 0.4;
+}
+
+button:hover:enabled {
+  cursor: pointer;
+  z-index: 1;
+  box-shadow: white 0px 0px 10px 5px;
+}
+
+button:active:enabled {
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #content-container {
+    min-height: 700px;
+  }
+
+  .form-container {
+    background: linear-gradient(to bottom, #000000, #8d8f8f);
+  }
+
+  .form-control {
+    margin: 4px;
+  }
+
+  .form-inputs {
+    margin: 5px 10px;
+  }
+
+  button {
+    margin: 4px;
+    width: 120px;
+  }
+}
